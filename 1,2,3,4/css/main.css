@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Libre+Baskerville');
+
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #eee;
+	font-family: 'Cabin', sans-serif;
+}
+
+body *{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Libre Baskerville', serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	color: #fff;
+	padding: 8px 16px;
+}
+
+h3{
+	color: inherit;
+	margin: 0px;
+	padding: 8px 16px;
+}
+
+a:link, a:visited, a:active{
+	text-decoration: none;
+	color: inherit;
+	opacity: .75;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+	color: inherit;
+	opacity: 1;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 0px 16px;
+	margin: 0px;
+	overflow: hidden: ;
+	background: #c71b1b;
+	z-index: 9999;
+}
+
+nav .brand{
+	color: white;
+	line-height: 24px;
+	font-family: 'Libre Baskerville', serif;
+	padding: 16px 0px;
+	font-size: 24px;
+	display: block;
+	float: left;
+}
+
+
+nav ul.nav{
+	display: block;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 16px 4px;
+}
+
+nav ul.nav>li>a{
+	line-height: 24px;
+	padding: 19px 0px;
+	font-size: 24px;
+}
+
+em{
+	font-family: 'Libre Baskerville', serif;
+	font-size: .9em;
+}
+
+
+abbr{
+	position: relative;
+	text-decoration: none;
+}
+
+mark{
+	margin: 15px;
+	display: block;
+	background-color: #c71b1b;
+	padding: 15px;
+}
+
+abbr:after{
+	top: 100%;
+	left: 0px;
+	content: '';
+	position: absolute;
+	background-color: #c71b1b;
+	width: 100%;
+	height: 3px;
+	bottom: -3px;
+}
+
+label{
+	display: block;
+	padding: 8px 0px;
+	margin: 0px;
+}
+
+fieldset{
+	background-color: white;
+	border: none;
+	margin-top: 16px;
+	padding: 16px;
+}
+
+legend{
+	background-color: white;
+	padding: 16px;
+}
+
+fieldset:first-child{
+	margin-top: 0px;
+}
+
+input[type="text"], input[type="email"]{
+	background-color: lightgrey;
+	border: none;
+	margin: 0px;
+	padding: 8px 2px;
+	border-bottom: 1px solid black;
+}
+
+textarea{
+	resize: vertical;
+	width: 100%;
+	height: auto;
+	padding: 8px;
+}
+.button-wrapper{
+	text-align: right;
+}
+
+button{
+	text-transform: uppercase;
+	background-color: #c71b1b;
+	padding: 12px 24px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 2px;
+	margin: 8px;
+}
+
+button:hover{
+	box-shadow:	0px 6px 12px 0px rgba(0,0,0,.29);
+	transition: .25s;
+}
+
+button.not-objective{
+	background-color: #ddd;
+}
+
+header.banner{
+	position: relative;
+	height: 40vh;
+	background: #000 url(../img/asado-bg.jpg);
+	background-size: round;
+	background-position: bottom;
+	background-attachment: fixed;
+}
+
+.banner h1{
+	box-sizing: border-box;
+	padding: 20vh 0px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+
+}
+article{
+	border-radius: 5px;
+	background: white;
+	padding: 30px;
+	margin: 16px 0px;
+
+}
+
+
+article:first-child{
+	margin: -64px 0px 16px;
+}
+
+
+.carta{
+	display: block;
+	list-style: none;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+.carta>li{
+	vertical-align: text-top;
+	width: 30%;
+	display: inline-block;
+}
+
+.carta>li:first-child{
+	margin-left: auto;
+}
+
+.carta>li:last-child{
+	margin-right: auto;
+}
+
+footer{
+	position: relative;
+	padding: 66px 0px 16px 0px;
+	background: #fff;
+	color: #000;
+	background: white url(../img/mantel.jpg);
+	background-repeat: repeat-x;
+	background-size: 50px;
+}
+.social{
+	overflow: auto;
+	width: 100%;
+	margin: 0px;
+	padding: 16px;
+	color: inherit;
+}
+
+.social li.lft{
+	display: block;
+	float: left;
+}
+
+.social li.rgt{
+	display: block;
+	float: right;
+}
+
+.contacto, .social-media{
+	padding: 0px;
+}
+.contacto li{
+	display: block;
+}
+.social-media{
+	float: right;
+	text-align: right;
+	padding: 16px;
+}
+.social-media li{
+	display: inline-block;
+	padding: 8px 0px 16px 8px;
+	transition: .25s;
+}
+
+.social-media li:hover{
+	transform: translate(0px, -3px) scale(1.1);
+
+}
+
+.side-bar{
+	position: absolute;
+	display: block;
+	width: 360px;
+	height: 100%;
+	float: left;
+	padding: 16px;
+	margin: 0px 0px;
+}
+
+.side-bar ~ article{
+	margin-left: 376px;
+}
+.side-bar ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.side-bar ul>li>a{
+	color: #c71b1b;
+}

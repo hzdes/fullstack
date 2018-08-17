@@ -1,0 +1,105 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  padding-top: 224px;
+  background: url(../img/bg-2.png); }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+nav {
+  top: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 909; }
+  nav .container {
+    height: 64px;
+    background-color: #ef4c27;
+    border-radius: 5px; }
+  nav .logo {
+    position: absolute;
+    margin: -27.5px -32px 0px -24px; }
+  nav .nav-bar {
+    height: 64px;
+    padding: 0px 0px 0px 48px; }
+    nav .nav-bar ul li {
+      color: white;
+      display: inline-block;
+      padding: 23px 12px;
+      font-size: 18px; }
+
+main .container {
+  box-sizing: border-box;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 64px; }
+main article {
+  border: 0px;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin: 5px;
+  overflow: hidden; }
+  main article img {
+    transition: transform .5s;
+    padding: 0px;
+    margin: 0px;
+    display: block; }
+  main article:hover img {
+    transform: scale(2);
+    transition: transform 25s; }
+  main article h3 {
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -100%);
+    position: absolute; }
+  main article button {
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 2px;
+    background-color: red;
+    border: none;
+    padding: 8px 16px; }
+  main article.new:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    width: 70px;
+    height: 70px;
+    background: url(../img/img-nuevo.png); }
+  main article.off-50:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    width: 70px;
+    height: 70px;
+    background: url(../img/img-descuento.png); }
+  main article.free:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    width: 70px;
+    height: 70px;
+    background: url(../img/img-gratis.png); }
+
+/*# sourceMappingURL=css.css.map */
