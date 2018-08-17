@@ -10,8 +10,8 @@
         echo highlight_file($url, true);
         echo "</pre>";
         echo "</div>";
-        echo "<div data-target='result$claseNum-$ejNum' class='acordion-header '><h4>Resultado</h4></div>";
-        echo "<div id='result$claseNum-$ejNum' class='acordion result'>";
+        echo "<div data-target='result$claseNum-$ejNum' class='acordion-header open'><h4>Resultado</h4></div>";
+        echo "<div id='result$claseNum-$ejNum' class='acordion open result'>";
         include $url;
         echo "</div>";
     }

@@ -22,7 +22,9 @@
             <h1>Ejercicios</h1>
         </header>
         <?php 
-            require_once "./clase-1.php";
+            include "./clase-1.php";
+            
+            include "./clase-1.php";
         ?>
     </main>
 </body>

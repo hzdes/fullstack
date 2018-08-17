@@ -9,8 +9,8 @@
     $siete  =   "un";
     $ocho   =   "trigal";
 
-    // No se pueden declarar imagenes con nombres numericos
-    echo "<p>No se nombrar variables comenzando con numeros <br></p>";
+    // No se pueden declarar variables con nombres numericos
+    echo "<p>No se pueden nombrar variables comenzando con numeros <br></p>";
     // Se imprime la frase original haciendo uso de las variables
     echo "<p>$uno $dos $tres $cuatro $cinco $seis $siete $ocho. <br></p>";
     // Se imprime una frase haciendo uso de dos variables
