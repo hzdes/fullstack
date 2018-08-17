@@ -1,0 +1,115 @@
+$_background:  #123;
+
+*{
+
+}
+
+body{
+    background-color: $_background;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    background: lighten($color: $_background, $amount: 25);
+    box-sizing: content-box;
+    border: 0.5em solid lighten($color: $_background, $amount: 10);
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header{
+    background: blue;
+    width: 100vw;
+    height: 20vh;
+}
+
+.caja-a, .caja-b, .caja-c{
+    float: left;
+    background: lighten($color: $_background, $amount: 50);
+
+    h2{
+        font-size: 1.75em;
+    }
+
+    p{
+        vertical-align: middle;
+        font-size: 0.8125em; 
+
+        strong{
+            vertical-align: middle;
+            font-size: 0.8125em; 
+            font-size: 1.153846157em;
+        }
+    }
+}
+
+.caja-a{
+    background: red;
+    width: 20.83%;
+}
+
+.caja-b{
+    background: red;
+    width: 66.66%;
+    margin: 0px 2.083%;
+}
+
+.caja-c{
+    background: red;
+    width: 8.33%;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        box-sizing: border-box;
+        padding: 20px;
+        width: 95%;
+    }
+
+    .caja-a{
+        float: left;
+        width: 40%;
+    }
+
+    .caja-b{
+        width: 55%;
+        float: right;
+        margin: 0px;
+    }
+    .caja-c{
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .container{
+        box-sizing: border-box;
+        padding: 20px;
+        width: 95%;
+    }
+
+    .caja-a{
+        float: none;
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .caja-b{
+        width: 100%;
+        float: none;
+        margin: 0px;
+        font-size: 1.3em;
+    }
+    .caja-c{
+        width: 100%;
+        float: none;
+        font-size: 1.3em;
+    }
+}
